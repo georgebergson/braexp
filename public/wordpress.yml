@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: braexp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: braexp
+  template:
+    metadata:
+      labels:
+        app: braexp
+    spec:
+      containers:
+      - name: braexp
+        image: crbraexp.azurecr.io/braexp:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: DATABASE_HOST
+          value: "mysql-braexp-preprod.mysql.database.azure.com" #Update here
+        - name: DATABASE_USERNAME
+          value: "usr_braexp"  #Update here
+        - name: DATABASE_PASSWORD
+          value: "Braexp@2023"  #Update here
+        - name: DATABASE_NAME
+          value: "braexp"
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: "app"
+                    operator: In
+                    values:
+                    - braexp
+              topologyKey: "kubernetes.io/hostname"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: php-svc
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+  selector:
+    app: braexp

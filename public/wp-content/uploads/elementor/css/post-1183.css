@@ -1,0 +1,56 @@
+.elementor-1183 .elementor-element.elementor-element-7e171da1 > .elementor-container{min-height:300px;}.elementor-1183 .elementor-element.elementor-element-7e171da1 > .elementor-container:after{content:"";min-height:inherit;}.elementor-1183 .elementor-element.elementor-element-7e171da1:not(.elementor-motion-effects-element-type-background), .elementor-1183 .elementor-element.elementor-element-7e171da1 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://gth-stage.its.org.br/wp-content/uploads/2021/08/Global-trade-hub-internacionalizacao-de-empresas-internacionalizar-minha-empresa-topo-interna.jpg");background-position:top center;background-repeat:no-repeat;background-size:cover;}.elementor-1183 .elementor-element.elementor-element-7e171da1 > .elementor-background-overlay{background-color:#000000;opacity:0.57;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-1183 .elementor-element.elementor-element-7e171da1{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-1183 .elementor-element.elementor-element-24621e9d{text-align:center;}.elementor-1183 .elementor-element.elementor-element-24621e9d .elementor-heading-title{color:#FFFFFF;font-family:"Open Sans", Sans-serif;font-weight:700;}.elementor-1183 .elementor-element.elementor-element-24621e9d > .elementor-widget-container{margin:30px 0px 0px 0px;}.elementor-1183 .elementor-element.elementor-element-1bf4c456{margin-top:0px;margin-bottom:45px;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products  ul.products{grid-column-gap:25px;grid-row-gap:40px;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products .attachment-woocommerce_thumbnail{border-radius:5px 5px 5px 5px;margin-bottom:15px;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .woocommerce-loop-product__title{color:#154992;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .woocommerce-loop-category__title{color:#154992;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .woocommerce-loop-product__title, .elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .woocommerce-loop-category__title{font-family:"Open Sans", Sans-serif;font-size:17px;font-weight:700;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .price{color:#2193D1;font-family:"Open Sans", Sans-serif;font-size:23px;font-weight:700;line-height:0.8em;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .price ins{color:#2193D1;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .price ins .amount{color:#2193D1;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .price del{color:#1FB2F0;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .price del .amount{color:#1FB2F0;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .price del {font-family:"Open Sans", Sans-serif;font-weight:700;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .button{color:#FFFFFF;background-color:#154992;font-family:"Open Sans", Sans-serif;font-size:17px;font-weight:700;text-transform:uppercase;line-height:1.1em;border-radius:5px 5px 5px 5px;margin-top:0px;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product .button:hover{background-color:#0093CE;}.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products ul.products li.product span.onsale{display:block;color:#FFFFFF;background-color:#ED2A2A;font-family:"Montserrat", Sans-serif;border-radius:0px;min-width:0px;min-height:23px;line-height:23px;margin:-1px;}.elementor-1183 .elementor-element.elementor-element-56c078c7 > .elementor-widget-container{margin:35px 0px 0px 0px;}@media(max-width:1024px){.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products  ul.products{grid-column-gap:20px;grid-row-gap:40px;}}@media(max-width:767px){.elementor-1183 .elementor-element.elementor-element-56c078c7.elementor-wc-products  ul.products{grid-column-gap:20px;grid-row-gap:40px;}}/* Start custom CSS */.wcfm-membership-wrapper{
+     box-shadow: none !important;
+}
+
+.wcfm_registration_form_heading{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #154992;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#wcfm_membership_registration_form input{
+    width: 100% !important;
+    box-shadow: none !important;
+    border: solid 1px #154992 !important;
+    height: 45px !important;
+    border-radius: 8px  !important;
+}
+
+#wcfm_membership_registration_form select{
+    width: 100% !important;
+    box-shadow: none !important;
+    border: solid 1px #154992 !important;
+    height: 45px !important;
+    border-radius: 8px  !important;
+}
+
+#wcfm_membership_registration_form .select2{
+    width: 100% !important;
+    box-shadow: none !important;
+    height: 45px !important;
+    border-radius: 8px  !important;
+}
+
+#wcfm_membership_registration_form .select2-selection{
+    width: 100% !important;
+    box-shadow: none !important;
+    height: 45px !important;
+    border-radius: 8px  !important;
+}
+
+
+#wcfm_membership_registration_form strong{
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-size: 15px !important;
+    color: #929292 !important;
+}
+
+.wcfm_submit_button{
+    background-color: #154992 !important;
+    font-family: 'Open Sans';
+    font-size: 17px !important;
+    height: 52px !important;
+}/* End custom CSS */

@@ -1,0 +1,903 @@
+2022-10-27T20:46:14+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+account
+====End Log====
+
+
+2022-10-27T22:03:33+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+account
+====End Log====
+
+
+2022-10-27T22:03:59+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1LxeB7ExqSJUWSDTgpVhVZmB",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1666908237,
+  "data": {
+    "object": {
+      "id": "src_1LxeB7ExqSJUWSDT8BOJFMPI",
+      "object": "source",
+      "amount": null,
+      "card": {
+        "exp_month": 12,
+        "exp_year": 2043,
+        "last4": "4242",
+        "country": "US",
+        "brand": "Visa",
+        "cvc_check": "unchecked",
+        "funding": "credit",
+        "fingerprint": "Wm1HNaJhr8YprWJx",
+        "three_d_secure": "optional",
+        "name": null,
+        "address_line1_check": null,
+        "address_zip_check": null,
+        "tokenization_method": null,
+        "dynamic_last4": null
+      },
+      "client_secret": "src_client_secret_f3eFtmVSDRP6dul0UZmyM3xZ",
+      "created": 1666908237,
+      "currency": null,
+      "flow": "none",
+      "livemode": false,
+      "metadata": {
+      },
+      "owner": {
+        "address": null,
+        "email": "daniel.martins@pirus.com.br",
+        "name": " ",
+        "phone": null,
+        "verified_address": null,
+        "verified_email": null,
+        "verified_name": null,
+        "verified_phone": null
+      },
+      "statement_descriptor": null,
+      "status": "chargeable",
+      "type": "card",
+      "usage": "reusable"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_jpSO51Cq8sQyCv",
+    "idempotency_key": "48431ef9-43d8-423b-b64d-5e9f3e84c260"
+  },
+  "type": "source.chargeable"
+}
+====End Log====
+
+
+2022-10-27T22:04:01+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+sources/src_1LxeB7ExqSJUWSDT8BOJFMPI
+====End Log====
+
+
+2022-10-27T22:04:02+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+customers request: Array
+(
+    [email] => daniel.martins@pirus.com.br
+    [description] => Nome: daniel cantuaria, Nome de usuário: daniel
+    [name] => daniel cantuaria
+    [metadata] => Array
+        (
+        )
+
+    [preferred_locales] => Array
+        (
+            [0] => pt-BR
+        )
+
+)
+
+====End Log====
+
+
+2022-10-27T22:04:03+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Info: Begin processing payment for order 1706 for the amount of 3000.00
+====End Log====
+
+
+2022-10-27T22:04:03+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+payment_intents request: Array
+(
+    [source] => src_1LxeB7ExqSJUWSDT8BOJFMPI
+    [amount] => 300000
+    [currency] => brl
+    [description] => BRAEXP - Pedido 1706
+    [metadata] => Array
+        (
+            [customer_name] =>  
+            [customer_email] => daniel.martins@pirus.com.br
+            [order_id] => 1706
+            [site_url] => https://gth-stage.its.org.br
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [customer] => cus_Mh2FVbTtOZJNDy
+    [statement_descriptor] => BRAEXP
+)
+
+====End Log====
+
+
+2022-10-27T22:04:04+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Stripe PaymentIntent pi_3LxeBEExqSJUWSDT1qBKolCW initiated for order 1706
+====End Log====
+
+
+2022-10-27T22:04:04+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+payment_intents/pi_3LxeBEExqSJUWSDT1qBKolCW/confirm request: Array
+(
+    [source] => src_1LxeB7ExqSJUWSDT8BOJFMPI
+)
+
+====End Log====
+
+
+2022-10-27T22:04:05+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1LxeBDExqSJUWSDTFXvsSbns",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1666908243,
+  "data": {
+    "object": {
+      "id": "cus_Mh2FVbTtOZJNDy",
+      "object": "customer",
+      "address": null,
+      "balance": 0,
+      "created": 1666908243,
+      "currency": null,
+      "default_source": null,
+      "delinquent": false,
+      "description": "Nome: daniel cantuaria, Nome de usuário: daniel",
+      "discount": null,
+      "email": "daniel.martins@pirus.com.br",
+      "invoice_prefix": "F2555265",
+      "invoice_settings": {
+        "custom_fields": null,
+        "default_payment_method": null,
+        "footer": null,
+        "rendering_options": null
+      },
+      "livemode": false,
+      "metadata": {
+      },
+      "name": "daniel cantuaria",
+      "next_invoice_sequence": 1,
+      "phone": null,
+      "preferred_locales": [
+        "pt-BR"
+      ],
+      "shipping": null,
+      "tax_exempt": "none",
+      "test_clock": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_3lTJGrH3QKdwfv",
+    "idempotency_key": "980e9372-dc44-4ca5-9ab4-956c00d22959"
+  },
+  "type": "customer.created"
+}
+====End Log====
+
+
+2022-10-27T22:04:06+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_3LxeBEExqSJUWSDT1b3uvxvP",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1666908244,
+  "data": {
+    "object": {
+      "id": "pi_3LxeBEExqSJUWSDT1qBKolCW",
+      "object": "payment_intent",
+      "amount": 300000,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {
+        }
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic",
+      "charges": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges?payment_intent=pi_3LxeBEExqSJUWSDT1qBKolCW"
+      },
+      "client_secret": "pi_3LxeBEExqSJUWSDT1qBKolCW_secret_OrljrQlqsK1zPLq5kGnjBqIyA",
+      "confirmation_method": "automatic",
+      "created": 1666908244,
+      "currency": "brl",
+      "customer": "cus_Mh2FVbTtOZJNDy",
+      "description": "BRAEXP - Pedido 1706",
+      "invoice": null,
+      "last_payment_error": null,
+      "livemode": false,
+      "metadata": {
+        "order_id": "1706",
+        "site_url": "https://gth-stage.its.org.br",
+        "customer_email": "daniel.martins@pirus.com.br",
+        "customer_name": " "
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_method": null,
+      "payment_method_options": {
+        "card": {
+          "installments": null,
+          "mandate_options": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card"
+      ],
+      "processing": null,
+      "receipt_email": null,
+      "review": null,
+      "setup_future_usage": null,
+      "shipping": null,
+      "source": null,
+      "statement_descriptor": "BRAEXP",
+      "statement_descriptor_suffix": null,
+      "status": "requires_payment_method",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_xFeVPJ9QOcXwln",
+    "idempotency_key": "7000a887-0120-4dc6-8413-35a48efefb17"
+  },
+  "type": "payment_intent.created"
+}
+====End Log====
+
+
+2022-10-27T22:04:06+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Stripe PaymentIntent pi_3LxeBEExqSJUWSDT1qBKolCW succeeded for order 1706
+====End Log====
+
+
+2022-10-27T22:04:06+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_3LxeBEExqSJUWSDT1VrIj1UQ
+    [object] => charge
+    [amount] => 300000
+    [amount_captured] => 300000
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_3LxeBEExqSJUWSDT1yNcx999
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => daniel.martins@pirus.com.br
+            [name] =>  
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => BRAEXP
+    [captured] => 1
+    [created] => 1666908245
+    [currency] => brl
+    [customer] => cus_Mh2FVbTtOZJNDy
+    [description] => BRAEXP - Pedido 1706
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_balance_transaction] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_email] => daniel.martins@pirus.com.br
+            [customer_name] =>  
+            [order_id] => 1706
+            [site_url] => https://gth-stage.its.org.br
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [risk_score] => 35
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_3LxeBEExqSJUWSDT1qBKolCW
+    [payment_method] => src_1LxeB7ExqSJUWSDT8BOJFMPI
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => 
+                            [address_postal_code_check] => 
+                            [cvc_check] => pass
+                        )
+
+                    [country] => US
+                    [exp_month] => 12
+                    [exp_year] => 2043
+                    [fingerprint] => Wm1HNaJhr8YprWJx
+                    [funding] => credit
+                    [installments] => 
+                    [last4] => 4242
+                    [mandate] => 
+                    [network] => visa
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUVGM1hFeHFTSlVXU0RUKNaA7JoGMgbp4OEMsg06LBaq5qHGF-xW8VO54gmlwRvJC8NKhSrJxstBRdtJMwyNo_WZCFBSVjE1HcUw
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_3LxeBEExqSJUWSDT1VrIj1UQ/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1LxeB7ExqSJUWSDT8BOJFMPI
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [address_line1_check] => 
+                    [address_zip_check] => 
+                    [brand] => Visa
+                    [country] => US
+                    [cvc_check] => pass
+                    [dynamic_last4] => 
+                    [exp_month] => 12
+                    [exp_year] => 2043
+                    [fingerprint] => Wm1HNaJhr8YprWJx
+                    [funding] => credit
+                    [last4] => 4242
+                    [name] => 
+                    [three_d_secure] => optional
+                    [tokenization_method] => 
+                )
+
+            [client_secret] => src_client_secret_f3eFtmVSDRP6dul0UZmyM3xZ
+            [created] => 1666908246
+            [currency] => 
+            [flow] => none
+            [livemode] => 
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => 
+                    [email] => daniel.martins@pirus.com.br
+                    [name] =>  
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => consumed
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => BRAEXP
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+2022-10-27T22:04:06+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+balance/history/txn_3LxeBEExqSJUWSDT1yNcx999
+====End Log====
+
+
+2022-10-27T22:04:08+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_3LxeBEExqSJUWSDT1uVMM7yo",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1666908246,
+  "data": {
+    "object": {
+      "id": "ch_3LxeBEExqSJUWSDT1VrIj1UQ",
+      "object": "charge",
+      "amount": 300000,
+      "amount_captured": 300000,
+      "amount_refunded": 0,
+      "application": null,
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_3LxeBEExqSJUWSDT1yNcx999",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "daniel.martins@pirus.com.br",
+        "name": " ",
+        "phone": null
+      },
+      "calculated_statement_descriptor": "BRAEXP",
+      "captured": true,
+      "created": 1666908245,
+      "currency": "brl",
+      "customer": "cus_Mh2FVbTtOZJNDy",
+      "description": "BRAEXP - Pedido 1706",
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_balance_transaction": null,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": false,
+      "metadata": {
+        "order_id": "1706",
+        "site_url": "https://gth-stage.its.org.br",
+        "customer_email": "daniel.martins@pirus.com.br",
+        "customer_name": " "
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "normal",
+        "risk_score": 35,
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": "pi_3LxeBEExqSJUWSDT1qBKolCW",
+      "payment_method": "src_1LxeB7ExqSJUWSDT8BOJFMPI",
+      "payment_method_details": {
+        "card": {
+          "brand": "visa",
+          "checks": {
+            "address_line1_check": null,
+            "address_postal_code_check": null,
+            "cvc_check": "pass"
+          },
+          "country": "US",
+          "exp_month": 12,
+          "exp_year": 2043,
+          "fingerprint": "Wm1HNaJhr8YprWJx",
+          "funding": "credit",
+          "installments": null,
+          "last4": "4242",
+          "mandate": null,
+          "network": "visa",
+          "three_d_secure": null,
+          "wallet": null
+        },
+        "type": "card"
+      },
+      "receipt_email": null,
+      "receipt_number": null,
+      "receipt_url": "https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUVGM1hFeHFTSlVXU0RUKNeA7JoGMgY3TVQtHQE6LBb1-blBN_E_2y67VLSdxlJM9A9iSJszA0XZwqKTHKXGWN5eOPPy-k13I1p7",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/ch_3LxeBEExqSJUWSDT1VrIj1UQ/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": {
+        "id": "src_1LxeB7ExqSJUWSDT8BOJFMPI",
+        "object": "source",
+        "amount": null,
+        "card": {
+          "exp_month": 12,
+          "exp_year": 2043,
+          "last4": "4242",
+          "country": "US",
+          "brand": "Visa",
+          "cvc_check": "pass",
+          "funding": "credit",
+          "fingerprint": "Wm1HNaJhr8YprWJx",
+          "three_d_secure": "optional",
+          "name": null,
+          "address_line1_check": null,
+          "address_zip_check": null,
+          "tokenization_method": null,
+          "dynamic_last4": null
+        },
+        "client_secret": "src_client_secret_f3eFtmVSDRP6dul0UZmyM3xZ",
+        "created": 1666908246,
+        "currency": null,
+        "flow": "none",
+        "livemode": false,
+        "metadata": {
+        },
+        "owner": {
+          "address": null,
+          "email": "daniel.martins@pirus.com.br",
+          "name": " ",
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "statement_descriptor": null,
+        "status": "consumed",
+        "type": "card",
+        "usage": "reusable"
+      },
+      "source_transfer": null,
+      "statement_descriptor": "BRAEXP",
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_UrxuBdxb9FiS34",
+    "idempotency_key": "d2404db1-e31f-4c87-89ed-ef2bd23d950f"
+  },
+  "type": "charge.succeeded"
+}
+====End Log====
+
+
+2022-10-27T22:04:09+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_3LxeBEExqSJUWSDT1cr4H9MG",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1666908246,
+  "data": {
+    "object": {
+      "id": "pi_3LxeBEExqSJUWSDT1qBKolCW",
+      "object": "payment_intent",
+      "amount": 300000,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {
+        }
+      },
+      "amount_received": 300000,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic",
+      "charges": {
+        "object": "list",
+        "data": [
+          {
+            "id": "ch_3LxeBEExqSJUWSDT1VrIj1UQ",
+            "object": "charge",
+            "amount": 300000,
+            "amount_captured": 300000,
+            "amount_refunded": 0,
+            "application": null,
+            "application_fee": null,
+            "application_fee_amount": null,
+            "balance_transaction": "txn_3LxeBEExqSJUWSDT1yNcx999",
+            "billing_details": {
+              "address": {
+                "city": null,
+                "country": null,
+                "line1": null,
+                "line2": null,
+                "postal_code": null,
+                "state": null
+              },
+              "email": "daniel.martins@pirus.com.br",
+              "name": " ",
+              "phone": null
+            },
+            "calculated_statement_descriptor": "BRAEXP",
+            "captured": true,
+            "created": 1666908245,
+            "currency": "brl",
+            "customer": "cus_Mh2FVbTtOZJNDy",
+            "description": "BRAEXP - Pedido 1706",
+            "destination": null,
+            "dispute": null,
+            "disputed": false,
+            "failure_balance_transaction": null,
+            "failure_code": null,
+            "failure_message": null,
+            "fraud_details": {
+            },
+            "invoice": null,
+            "livemode": false,
+            "metadata": {
+              "order_id": "1706",
+              "site_url": "https://gth-stage.its.org.br",
+              "customer_email": "daniel.martins@pirus.com.br",
+              "customer_name": " "
+            },
+            "on_behalf_of": null,
+            "order": null,
+            "outcome": {
+              "network_status": "approved_by_network",
+              "reason": null,
+              "risk_level": "normal",
+              "risk_score": 35,
+              "seller_message": "Payment complete.",
+              "type": "authorized"
+            },
+            "paid": true,
+            "payment_intent": "pi_3LxeBEExqSJUWSDT1qBKolCW",
+            "payment_method": "src_1LxeB7ExqSJUWSDT8BOJFMPI",
+            "payment_method_details": {
+              "card": {
+                "brand": "visa",
+                "checks": {
+                  "address_line1_check": null,
+                  "address_postal_code_check": null,
+                  "cvc_check": "pass"
+                },
+                "country": "US",
+                "exp_month": 12,
+                "exp_year": 2043,
+                "fingerprint": "Wm1HNaJhr8YprWJx",
+                "funding": "credit",
+                "installments": null,
+                "last4": "4242",
+                "mandate": null,
+                "network": "visa",
+                "three_d_secure": null,
+                "wallet": null
+              },
+              "type": "card"
+            },
+            "receipt_email": null,
+            "receipt_number": null,
+            "receipt_url": "https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUVGM1hFeHFTSlVXU0RUKNaA7JoGMgaSzLk2YtE6LBZXQoNliwXRE7tvNGyFRl5DmVd28QArvWuL53_GmMYNwKYvuKeRtcmdqgl9",
+            "refunded": false,
+            "refunds": {
+              "object": "list",
+              "data": [
+
+              ],
+              "has_more": false,
+              "total_count": 0,
+              "url": "/v1/charges/ch_3LxeBEExqSJUWSDT1VrIj1UQ/refunds"
+            },
+            "review": null,
+            "shipping": null,
+            "source": {
+              "id": "src_1LxeB7ExqSJUWSDT8BOJFMPI",
+              "object": "source",
+              "amount": null,
+              "card": {
+                "exp_month": 12,
+                "exp_year": 2043,
+                "last4": "4242",
+                "country": "US",
+                "brand": "Visa",
+                "cvc_check": "pass",
+                "funding": "credit",
+                "fingerprint": "Wm1HNaJhr8YprWJx",
+                "three_d_secure": "optional",
+                "name": null,
+                "address_line1_check": null,
+                "address_zip_check": null,
+                "tokenization_method": null,
+                "dynamic_last4": null
+              },
+              "client_secret": "src_client_secret_f3eFtmVSDRP6dul0UZmyM3xZ",
+              "created": 1666908246,
+              "currency": null,
+              "flow": "none",
+              "livemode": false,
+              "metadata": {
+              },
+              "owner": {
+                "address": null,
+                "email": "daniel.martins@pirus.com.br",
+                "name": " ",
+                "phone": null,
+                "verified_address": null,
+                "verified_email": null,
+                "verified_name": null,
+                "verified_phone": null
+              },
+              "statement_descriptor": null,
+              "status": "consumed",
+              "type": "card",
+              "usage": "reusable"
+            },
+            "source_transfer": null,
+            "statement_descriptor": "BRAEXP",
+            "statement_descriptor_suffix": null,
+            "status": "succeeded",
+            "transfer_data": null,
+            "transfer_group": null
+          }
+        ],
+        "has_more": false,
+        "total_count": 1,
+        "url": "/v1/charges?payment_intent=pi_3LxeBEExqSJUWSDT1qBKolCW"
+      },
+      "client_secret": "pi_3LxeBEExqSJUWSDT1qBKolCW_secret_OrljrQlqsK1zPLq5kGnjBqIyA",
+      "confirmation_method": "automatic",
+      "created": 1666908244,
+      "currency": "brl",
+      "customer": "cus_Mh2FVbTtOZJNDy",
+      "description": "BRAEXP - Pedido 1706",
+      "invoice": null,
+      "last_payment_error": null,
+      "livemode": false,
+      "metadata": {
+        "order_id": "1706",
+        "site_url": "https://gth-stage.its.org.br",
+        "customer_email": "daniel.martins@pirus.com.br",
+        "customer_name": " "
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_method": null,
+      "payment_method_options": {
+        "card": {
+          "installments": null,
+          "mandate_options": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card"
+      ],
+      "processing": null,
+      "receipt_email": null,
+      "review": null,
+      "setup_future_usage": null,
+      "shipping": null,
+      "source": "src_1LxeB7ExqSJUWSDT8BOJFMPI",
+      "statement_descriptor": "BRAEXP",
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_UrxuBdxb9FiS34",
+    "idempotency_key": "d2404db1-e31f-4c87-89ed-ef2bd23d950f"
+  },
+  "type": "payment_intent.succeeded"
+}
+====End Log====
+
+
+2022-10-27T22:12:33+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+account
+====End Log====
+
+
+2022-10-27T22:12:38+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+account
+====End Log====
+
+

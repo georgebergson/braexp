@@ -42,7 +42,7 @@ require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 require_once ABSPATH . 'wp-admin/includes/translation-install.php';
 
 /** Load wpdb */
-require_once ABSPATH . WPINC . '/class-wpdb.php';
+require_once ABSPATH . WPINC . '/wp-db.php';
 
 nocache_headers();
 
@@ -74,13 +74,14 @@ function display_header( $body_classes = '' ) {
 	<?php wp_admin_css( 'install', true ); ?>
 </head>
 <body class="wp-core-ui<?php echo $body_classes; ?>">
+123
 <p id="logo"><?php _e( 'WordPress' ); ?></p>
 
 	<?php
 } // End display_header().
 
 /**
- * Displays installer setup form.
+ * Display installer setup form.
  *
  * @since 2.8.0
  *
@@ -96,7 +97,7 @@ function display_setup_form( $error = null ) {
 	// Ensure that sites appear in search engines by default.
 	$blog_public = 1;
 	if ( isset( $_POST['weblog_title'] ) ) {
-		$blog_public = isset( $_POST['blog_public'] ) ? (int) $_POST['blog_public'] : $blog_public;
+		$blog_public = isset( $_POST['blog_public'] );
 	}
 
 	$weblog_title = isset( $_POST['weblog_title'] ) ? trim( wp_unslash( $_POST['weblog_title'] ) ) : '';
@@ -114,7 +115,7 @@ function display_setup_form( $error = null ) {
 			<th scope="row"><label for="weblog_title"><?php _e( 'Site Title' ); ?></label></th>
 			<td><input name="weblog_title" type="text" id="weblog_title" size="25" value="<?php echo esc_attr( $weblog_title ); ?>" /></td>
 		</tr>
-		<tr>
+		<tr>123
 			<th scope="row"><label for="user_login"><?php _e( 'Username' ); ?></label></th>
 			<td>
 			<?php
@@ -187,7 +188,7 @@ function display_setup_form( $error = null ) {
 					if ( has_action( 'blog_privacy_selector' ) ) {
 						?>
 						<input id="blog-public" type="radio" name="blog_public" value="1" <?php checked( 1, $blog_public ); ?> />
-						<label for="blog-public"><?php _e( 'Allow search engines to index this site' ); ?></label><br />
+						<label for="blog-public"><?php _e( 'Allow search engines to index this site' ); ?></label><br/>
 						<input id="blog-norobots" type="radio" name="blog_public" value="0" <?php checked( 0, $blog_public ); ?> />
 						<label for="blog-norobots"><?php _e( 'Discourage search engines from indexing this site' ); ?></label>
 						<p class="description"><?php _e( 'Note: Neither of these options blocks access to your site &mdash; it is up to search engines to honor your request.' ); ?></p>
@@ -225,11 +226,10 @@ if ( is_blog_installed() ) {
  * @global string $wp_version             The WordPress version string.
  * @global string $required_php_version   The required PHP version string.
  * @global string $required_mysql_version The required MySQL version string.
- * @global wpdb   $wpdb                   WordPress database abstraction object.
  */
-global $wp_version, $required_php_version, $required_mysql_version, $wpdb;
+global $wp_version, $required_php_version, $required_mysql_version;
 
-$php_version   = PHP_VERSION;
+$php_version   = phpversion();
 $mysql_version = $wpdb->db_version();
 $php_compat    = version_compare( $php_version, $required_php_version, '>=' );
 $mysql_compat  = version_compare( $mysql_version, $required_mysql_version, '>=' ) || file_exists( WP_CONTENT_DIR . '/db.php' );

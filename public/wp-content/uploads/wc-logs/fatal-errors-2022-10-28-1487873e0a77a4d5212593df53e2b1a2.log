@@ -1,0 +1,14 @@
+2022-10-28T07:42:08+00:00 CRITICAL require(): Failed opening required '/var/www/html/wp-content/plugins/wp-plugin-gth/config/db/queries.php' (include_path='.:/usr/local/lib/php'), em /var/www/html/wp-content/plugins/wp-plugin-gth/app/model.php, na linha 14
+
+2022-10-28T07:44:08+00:00 CRITICAL require(): Failed opening required '/var/www/html/wp-content/plugins/wp-plugin-gth/config/db/queries.php' (include_path='.:/usr/local/lib/php'), em /var/www/html/wp-content/plugins/wp-plugin-gth/app/model.php, na linha 14
+
+2022-10-28T07:45:56+00:00 CRITICAL require(): Failed opening required '/var/www/html/wp-content/plugins/wp-plugin-gth/config/db/queries.php' (include_path='.:/usr/local/lib/php'), em /var/www/html/wp-content/plugins/wp-plugin-gth/app/model.php, na linha 14
+
+2022-10-28T07:46:56+00:00 CRITICAL require(): Failed opening required '/var/www/html/wp-content/plugins/wp-plugin-gth/config/db/queries.php' (include_path='.:/usr/local/lib/php'), em /var/www/html/wp-content/plugins/wp-plugin-gth/app/model.php, na linha 14
+
+2022-10-28T07:48:56+00:00 CRITICAL require(): Failed opening required '/var/www/html/wp-content/plugins/wp-plugin-gth/config/db/queries.php' (include_path='.:/usr/local/lib/php'), em /var/www/html/wp-content/plugins/wp-plugin-gth/app/model.php, na linha 14
+
+2022-10-28T07:52:56+00:00 CRITICAL require(): Failed opening required '/var/www/html/wp-content/plugins/wp-plugin-gth/config/db/queries.php' (include_path='.:/usr/local/lib/php'), em /var/www/html/wp-content/plugins/wp-plugin-gth/app/model.php, na linha 14
+
+2022-10-28T07:54:56+00:00 CRITICAL require(): Failed opening required '/var/www/html/wp-content/plugins/wp-plugin-gth/config/db/queries.php' (include_path='.:/usr/local/lib/php'), em /var/www/html/wp-content/plugins/wp-plugin-gth/app/model.php, na linha 14
+

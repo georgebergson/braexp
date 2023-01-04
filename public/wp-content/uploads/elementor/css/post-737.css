@@ -1,0 +1,56 @@
+.elementor-737 .elementor-element.elementor-element-664d0f08 > .elementor-container{min-height:300px;}.elementor-737 .elementor-element.elementor-element-664d0f08 > .elementor-container:after{content:"";min-height:inherit;}.elementor-737 .elementor-element.elementor-element-664d0f08:not(.elementor-motion-effects-element-type-background), .elementor-737 .elementor-element.elementor-element-664d0f08 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://gth-stage.its.org.br/wp-content/uploads/2021/08/Global-trade-hub-internacionalizacao-de-empresas-internacionalizar-minha-empresa-topo-interna.jpg");background-position:top center;background-repeat:no-repeat;background-size:cover;}.elementor-737 .elementor-element.elementor-element-664d0f08 > .elementor-background-overlay{background-color:#000000;opacity:0.57;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-737 .elementor-element.elementor-element-664d0f08{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-737 .elementor-element.elementor-element-f6bc11f{text-align:center;}.elementor-737 .elementor-element.elementor-element-f6bc11f .elementor-heading-title{color:#FFFFFF;font-family:"Open Sans", Sans-serif;font-weight:700;}.elementor-737 .elementor-element.elementor-element-f6bc11f > .elementor-widget-container{margin:30px 0px 0px 0px;}.elementor-737 .elementor-element.elementor-element-1e4065ad{margin-top:35px;margin-bottom:0px;}.elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-posts-container .elementor-post__thumbnail{padding-bottom:calc( 0.66 * 100% );}.elementor-737 .elementor-element.elementor-element-e4484d5:after{content:"0.66";}.elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-post__meta-data span + span:before{content:"•";}.elementor-737 .elementor-element.elementor-element-e4484d5{--grid-column-gap:30px;--grid-row-gap:35px;}.elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-post__text{margin-top:20px;}.elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-post__badge{right:0;}.elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-post__card .elementor-post__badge{background-color:#03488F;margin:20px;}.elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-post__title, .elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-post__title a{color:#03488F;font-family:"Open Sans", Sans-serif;font-size:22px;font-weight:800;text-decoration:none;line-height:28px;}.elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-post__meta-data{color:#BABABA;font-family:"Open Sans", Sans-serif;font-weight:400;}.elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-post__excerpt p{color:#989898;font-family:"Open Sans", Sans-serif;font-weight:500;line-height:21px;}.elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-post__read-more{color:#0093CE;font-family:"Open Sans", Sans-serif;font-size:14px;font-weight:800;text-transform:uppercase;font-style:normal;text-decoration:none;}@media(max-width:767px){.elementor-737 .elementor-element.elementor-element-e4484d5 .elementor-posts-container .elementor-post__thumbnail{padding-bottom:calc( 0.5 * 100% );}.elementor-737 .elementor-element.elementor-element-e4484d5:after{content:"0.5";}}/* Start custom CSS */.wcfm-membership-wrapper{
+     box-shadow: none !important;
+}
+
+.wcfm_registration_form_heading{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #154992;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#wcfm_membership_registration_form input{
+    width: 100% !important;
+    box-shadow: none !important;
+    border: solid 1px #154992 !important;
+    height: 45px !important;
+    border-radius: 8px  !important;
+}
+
+#wcfm_membership_registration_form select{
+    width: 100% !important;
+    box-shadow: none !important;
+    border: solid 1px #154992 !important;
+    height: 45px !important;
+    border-radius: 8px  !important;
+}
+
+#wcfm_membership_registration_form .select2{
+    width: 100% !important;
+    box-shadow: none !important;
+    height: 45px !important;
+    border-radius: 8px  !important;
+}
+
+#wcfm_membership_registration_form .select2-selection{
+    width: 100% !important;
+    box-shadow: none !important;
+    height: 45px !important;
+    border-radius: 8px  !important;
+}
+
+
+#wcfm_membership_registration_form strong{
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-size: 15px !important;
+    color: #929292 !important;
+}
+
+.wcfm_submit_button{
+    background-color: #154992 !important;
+    font-family: 'Open Sans';
+    font-size: 17px !important;
+    height: 52px !important;
+}/* End custom CSS */

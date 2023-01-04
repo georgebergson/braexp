@@ -1,0 +1,22 @@
+.elementor-878 .elementor-element.elementor-element-243d7973 > .elementor-container{max-width:900px;}.elementor-878 .elementor-element.elementor-element-243d7973{margin-top:30px;margin-bottom:20px;padding:0px 0px 0px 0px;}.elementor-878 .elementor-element.elementor-element-6b1eb829 .elementor-image img{width:134px;}.elementor-878 .elementor-element.elementor-element-53c1bc3c{text-align:center;}.elementor-878 .elementor-element.elementor-element-53c1bc3c .elementor-heading-title{color:#03488F;font-family:"Open Sans", Sans-serif;font-size:39px;font-weight:800;line-height:35px;}.elementor-878 .elementor-element.elementor-element-53c1bc3c > .elementor-widget-container{margin:0px 0px 0px 0px;}.elementor-878 .elementor-element.elementor-element-6e0ef150 .elementor-text-editor{text-align:center;}.elementor-878 .elementor-element.elementor-element-6e0ef150{color:#606060;font-family:"Open Sans", Sans-serif;font-size:20px;font-weight:700;}/* Start custom CSS for text-editor, class: .elementor-element-6e0ef150 */strong{
+    font-weight: 800 !important;
+    color: #03488f !important;
+}/* End custom CSS */
+/* Start custom CSS for section, class: .elementor-element-243d7973 */#esconder_da_pagina{
+    display: none !important;
+}
+
+#wcfm_membership_container a.wcfm_submit_button {
+    font-family: 'Open Sans' !important;
+    font-weight: 800 !important;
+    border-radius: 9px !important;
+}
+
+#wcfm-main-contentainer .wcfm_membership_thankyou_content_wrapper {
+    width: 100% !important;
+}   
+
+.wcfm-membership-wrapper {
+    padding: 0px !important;
+    width: 100% !important;
+}/* End custom CSS */

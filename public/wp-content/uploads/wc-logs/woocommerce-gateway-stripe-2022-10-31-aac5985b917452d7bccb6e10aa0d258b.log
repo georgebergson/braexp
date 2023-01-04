@@ -1,0 +1,92 @@
+2022-10-31T01:23:21+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1LymihExqSJUWSDT8gVDlbjq",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667179399,
+  "data": {
+    "object": {
+      "id": "po_1LymcxExqSJUWSDTnB7W6YqK",
+      "object": "payout",
+      "amount": 287991,
+      "arrival_date": 1667174400,
+      "automatic": true,
+      "balance_transaction": "txn_1LymcxExqSJUWSDTCYszfxkQ",
+      "created": 1667179043,
+      "currency": "brl",
+      "description": "STRIPE PAYOUT",
+      "destination": "ba_1IFNcGExqSJUWSDT2LZQANXn",
+      "failure_balance_transaction": null,
+      "failure_code": null,
+      "failure_message": null,
+      "livemode": false,
+      "metadata": {
+      },
+      "method": "standard",
+      "original_payout": null,
+      "reversed_by": null,
+      "source_type": "card",
+      "statement_descriptor": null,
+      "status": "paid",
+      "type": "bank_account"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "payout.paid"
+}
+====End Log====
+
+
+2022-10-31T01:23:21+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1LymigExqSJUWSDTCuULLn3B",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667179398,
+  "data": {
+    "object": {
+      "id": "po_1LymcxExqSJUWSDTnB7W6YqK",
+      "object": "payout",
+      "amount": 287991,
+      "arrival_date": 1667174400,
+      "automatic": true,
+      "balance_transaction": "txn_1LymcxExqSJUWSDTCYszfxkQ",
+      "created": 1667179043,
+      "currency": "brl",
+      "description": "STRIPE PAYOUT",
+      "destination": "ba_1IFNcGExqSJUWSDT2LZQANXn",
+      "failure_balance_transaction": null,
+      "failure_code": null,
+      "failure_message": null,
+      "livemode": false,
+      "metadata": {
+      },
+      "method": "standard",
+      "original_payout": null,
+      "reversed_by": null,
+      "source_type": "card",
+      "statement_descriptor": null,
+      "status": "in_transit",
+      "type": "bank_account"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "payout.created"
+}
+====End Log====
+
+

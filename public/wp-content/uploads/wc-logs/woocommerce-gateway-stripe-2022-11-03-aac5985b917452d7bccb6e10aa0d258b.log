@@ -1,0 +1,1737 @@
+2022-11-03T12:04:48+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+account
+====End Log====
+
+
+2022-11-03T14:35:40+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+account
+====End Log====
+
+
+2022-11-03T16:36:51+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+account
+====End Log====
+
+
+2022-11-03T16:45:20+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1M06XaExqSJUWSDTuVF0jknF",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667493918,
+  "data": {
+    "object": {
+      "id": "src_1M06XaExqSJUWSDTJeg5jCRU",
+      "object": "source",
+      "amount": null,
+      "card": {
+        "exp_month": 12,
+        "exp_year": 2034,
+        "last4": "4242",
+        "country": "US",
+        "brand": "Visa",
+        "cvc_check": "unchecked",
+        "funding": "credit",
+        "fingerprint": "Wm1HNaJhr8YprWJx",
+        "three_d_secure": "optional",
+        "name": null,
+        "address_line1_check": null,
+        "address_zip_check": null,
+        "tokenization_method": null,
+        "dynamic_last4": null
+      },
+      "client_secret": "src_client_secret_FBGHVar47rB7b2cTEQx8JrfK",
+      "created": 1667493918,
+      "currency": null,
+      "flow": "none",
+      "livemode": false,
+      "metadata": {
+      },
+      "owner": {
+        "address": null,
+        "email": "leo@gth.com.br",
+        "name": " ",
+        "phone": null,
+        "verified_address": null,
+        "verified_email": null,
+        "verified_name": null,
+        "verified_phone": null
+      },
+      "statement_descriptor": null,
+      "status": "chargeable",
+      "type": "card",
+      "usage": "reusable"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_xdhJXwetRFnVxM",
+    "idempotency_key": "36704c3c-06e1-4d4b-9798-e2f6192e71ab"
+  },
+  "type": "source.chargeable"
+}
+====End Log====
+
+
+2022-11-03T16:45:21+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+sources/src_1M06XaExqSJUWSDTJeg5jCRU
+====End Log====
+
+
+2022-11-03T16:45:26+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+customers request: Array
+(
+    [email] => leo@gth.com.br
+    [description] => Nome:  , Nome de usuário: 43070652042
+    [metadata] => Array
+        (
+        )
+
+    [preferred_locales] => Array
+        (
+            [0] => pt-BR
+        )
+
+)
+
+====End Log====
+
+
+2022-11-03T16:45:27+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Info: Begin processing payment for order 1796 for the amount of 100.00
+====End Log====
+
+
+2022-11-03T16:45:27+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+payment_intents request: Array
+(
+    [source] => src_1M06XaExqSJUWSDTJeg5jCRU
+    [amount] => 10000
+    [currency] => brl
+    [description] => BRAEXP - Pedido 1796
+    [metadata] => Array
+        (
+            [customer_name] =>  
+            [customer_email] => leo@gth.com.br
+            [order_id] => 1796
+            [site_url] => https://gth-stage.its.org.br
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [customer] => cus_MjZhZKczfrji7o
+    [statement_descriptor] => BRAEXP
+)
+
+====End Log====
+
+
+2022-11-03T16:45:27+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Stripe PaymentIntent pi_3M06XjExqSJUWSDT1owVlimZ initiated for order 1796
+====End Log====
+
+
+2022-11-03T16:45:28+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+payment_intents/pi_3M06XjExqSJUWSDT1owVlimZ/confirm request: Array
+(
+    [source] => src_1M06XaExqSJUWSDTJeg5jCRU
+)
+
+====End Log====
+
+
+2022-11-03T16:45:29+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1M06XiExqSJUWSDTbNE2S49w",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667493926,
+  "data": {
+    "object": {
+      "id": "cus_MjZhZKczfrji7o",
+      "object": "customer",
+      "address": null,
+      "balance": 0,
+      "created": 1667493926,
+      "currency": null,
+      "default_source": null,
+      "delinquent": false,
+      "description": "Nome:  , Nome de usuário: 43070652042",
+      "discount": null,
+      "email": "leo@gth.com.br",
+      "invoice_prefix": "988C3D43",
+      "invoice_settings": {
+        "custom_fields": null,
+        "default_payment_method": null,
+        "footer": null,
+        "rendering_options": null
+      },
+      "livemode": false,
+      "metadata": {
+      },
+      "name": null,
+      "next_invoice_sequence": 1,
+      "phone": null,
+      "preferred_locales": [
+        "pt-BR"
+      ],
+      "shipping": null,
+      "tax_exempt": "none",
+      "test_clock": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_h06Wx5HhvgjSGJ",
+    "idempotency_key": "bd724740-7c27-4931-a091-0e53c694529c"
+  },
+  "type": "customer.created"
+}
+====End Log====
+
+
+2022-11-03T16:45:29+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_3M06XjExqSJUWSDT1azwa9pd",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667493927,
+  "data": {
+    "object": {
+      "id": "pi_3M06XjExqSJUWSDT1owVlimZ",
+      "object": "payment_intent",
+      "amount": 10000,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {
+        }
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic",
+      "charges": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges?payment_intent=pi_3M06XjExqSJUWSDT1owVlimZ"
+      },
+      "client_secret": "pi_3M06XjExqSJUWSDT1owVlimZ_secret_Vr0Jf45xcAygTcfhqFGCIeEgQ",
+      "confirmation_method": "automatic",
+      "created": 1667493927,
+      "currency": "brl",
+      "customer": "cus_MjZhZKczfrji7o",
+      "description": "BRAEXP - Pedido 1796",
+      "invoice": null,
+      "last_payment_error": null,
+      "livemode": false,
+      "metadata": {
+        "order_id": "1796",
+        "site_url": "https://gth-stage.its.org.br",
+        "customer_email": "leo@gth.com.br",
+        "customer_name": " "
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_method": null,
+      "payment_method_options": {
+        "card": {
+          "installments": null,
+          "mandate_options": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card"
+      ],
+      "processing": null,
+      "receipt_email": null,
+      "review": null,
+      "setup_future_usage": null,
+      "shipping": null,
+      "source": null,
+      "statement_descriptor": "BRAEXP",
+      "statement_descriptor_suffix": null,
+      "status": "requires_payment_method",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_fbaDNRuZKHq6z0",
+    "idempotency_key": "51d9a48f-6881-415b-8c86-765a27d76768"
+  },
+  "type": "payment_intent.created"
+}
+====End Log====
+
+
+2022-11-03T16:45:30+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Stripe PaymentIntent pi_3M06XjExqSJUWSDT1owVlimZ succeeded for order 1796
+====End Log====
+
+
+2022-11-03T16:45:30+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_3M06XjExqSJUWSDT1uSgkace
+    [object] => charge
+    [amount] => 10000
+    [amount_captured] => 10000
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_3M06XjExqSJUWSDT12OwQbLR
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => leo@gth.com.br
+            [name] =>  
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => BRAEXP
+    [captured] => 1
+    [created] => 1667493929
+    [currency] => brl
+    [customer] => cus_MjZhZKczfrji7o
+    [description] => BRAEXP - Pedido 1796
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_balance_transaction] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_email] => leo@gth.com.br
+            [customer_name] =>  
+            [order_id] => 1796
+            [site_url] => https://gth-stage.its.org.br
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [risk_score] => 18
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_3M06XjExqSJUWSDT1owVlimZ
+    [payment_method] => src_1M06XaExqSJUWSDTJeg5jCRU
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => 
+                            [address_postal_code_check] => 
+                            [cvc_check] => pass
+                        )
+
+                    [country] => US
+                    [exp_month] => 12
+                    [exp_year] => 2034
+                    [fingerprint] => Wm1HNaJhr8YprWJx
+                    [funding] => credit
+                    [installments] => 
+                    [last4] => 4242
+                    [mandate] => 
+                    [network] => visa
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUVGM1hFeHFTSlVXU0RUKKrgj5sGMgYF3MTXXfE6LBb7e4ERK8hKY_Z-Ljev7FiXIdH54Hmi56dEcoBU2BMDUSa6pmbTa7rF2ZL5
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_3M06XjExqSJUWSDT1uSgkace/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1M06XaExqSJUWSDTJeg5jCRU
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [address_line1_check] => 
+                    [address_zip_check] => 
+                    [brand] => Visa
+                    [country] => US
+                    [cvc_check] => pass
+                    [dynamic_last4] => 
+                    [exp_month] => 12
+                    [exp_year] => 2034
+                    [fingerprint] => Wm1HNaJhr8YprWJx
+                    [funding] => credit
+                    [last4] => 4242
+                    [name] => 
+                    [three_d_secure] => optional
+                    [tokenization_method] => 
+                )
+
+            [client_secret] => src_client_secret_FBGHVar47rB7b2cTEQx8JrfK
+            [created] => 1667493929
+            [currency] => 
+            [flow] => none
+            [livemode] => 
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => 
+                    [email] => leo@gth.com.br
+                    [name] =>  
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => consumed
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => BRAEXP
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+2022-11-03T16:45:30+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+balance/history/txn_3M06XjExqSJUWSDT12OwQbLR
+====End Log====
+
+
+2022-11-03T16:45:32+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_3M06XjExqSJUWSDT1443Y3QQ",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667493930,
+  "data": {
+    "object": {
+      "id": "pi_3M06XjExqSJUWSDT1owVlimZ",
+      "object": "payment_intent",
+      "amount": 10000,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {
+        }
+      },
+      "amount_received": 10000,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic",
+      "charges": {
+        "object": "list",
+        "data": [
+          {
+            "id": "ch_3M06XjExqSJUWSDT1uSgkace",
+            "object": "charge",
+            "amount": 10000,
+            "amount_captured": 10000,
+            "amount_refunded": 0,
+            "application": null,
+            "application_fee": null,
+            "application_fee_amount": null,
+            "balance_transaction": "txn_3M06XjExqSJUWSDT12OwQbLR",
+            "billing_details": {
+              "address": {
+                "city": null,
+                "country": null,
+                "line1": null,
+                "line2": null,
+                "postal_code": null,
+                "state": null
+              },
+              "email": "leo@gth.com.br",
+              "name": " ",
+              "phone": null
+            },
+            "calculated_statement_descriptor": "BRAEXP",
+            "captured": true,
+            "created": 1667493929,
+            "currency": "brl",
+            "customer": "cus_MjZhZKczfrji7o",
+            "description": "BRAEXP - Pedido 1796",
+            "destination": null,
+            "dispute": null,
+            "disputed": false,
+            "failure_balance_transaction": null,
+            "failure_code": null,
+            "failure_message": null,
+            "fraud_details": {
+            },
+            "invoice": null,
+            "livemode": false,
+            "metadata": {
+              "order_id": "1796",
+              "site_url": "https://gth-stage.its.org.br",
+              "customer_email": "leo@gth.com.br",
+              "customer_name": " "
+            },
+            "on_behalf_of": null,
+            "order": null,
+            "outcome": {
+              "network_status": "approved_by_network",
+              "reason": null,
+              "risk_level": "normal",
+              "risk_score": 18,
+              "seller_message": "Payment complete.",
+              "type": "authorized"
+            },
+            "paid": true,
+            "payment_intent": "pi_3M06XjExqSJUWSDT1owVlimZ",
+            "payment_method": "src_1M06XaExqSJUWSDTJeg5jCRU",
+            "payment_method_details": {
+              "card": {
+                "brand": "visa",
+                "checks": {
+                  "address_line1_check": null,
+                  "address_postal_code_check": null,
+                  "cvc_check": "pass"
+                },
+                "country": "US",
+                "exp_month": 12,
+                "exp_year": 2034,
+                "fingerprint": "Wm1HNaJhr8YprWJx",
+                "funding": "credit",
+                "installments": null,
+                "last4": "4242",
+                "mandate": null,
+                "network": "visa",
+                "three_d_secure": null,
+                "wallet": null
+              },
+              "type": "card"
+            },
+            "receipt_email": null,
+            "receipt_number": null,
+            "receipt_url": "https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUVGM1hFeHFTSlVXU0RUKKrgj5sGMgYw53bL0Ps6LBatL3ciW6RgsnsQJjHN01u31Dyz_MdljFXPM12clVfMSGauGa4-9o_Hbf55",
+            "refunded": false,
+            "refunds": {
+              "object": "list",
+              "data": [
+
+              ],
+              "has_more": false,
+              "total_count": 0,
+              "url": "/v1/charges/ch_3M06XjExqSJUWSDT1uSgkace/refunds"
+            },
+            "review": null,
+            "shipping": null,
+            "source": {
+              "id": "src_1M06XaExqSJUWSDTJeg5jCRU",
+              "object": "source",
+              "amount": null,
+              "card": {
+                "exp_month": 12,
+                "exp_year": 2034,
+                "last4": "4242",
+                "country": "US",
+                "brand": "Visa",
+                "cvc_check": "pass",
+                "funding": "credit",
+                "fingerprint": "Wm1HNaJhr8YprWJx",
+                "three_d_secure": "optional",
+                "name": null,
+                "address_line1_check": null,
+                "address_zip_check": null,
+                "tokenization_method": null,
+                "dynamic_last4": null
+              },
+              "client_secret": "src_client_secret_FBGHVar47rB7b2cTEQx8JrfK",
+              "created": 1667493929,
+              "currency": null,
+              "flow": "none",
+              "livemode": false,
+              "metadata": {
+              },
+              "owner": {
+                "address": null,
+                "email": "leo@gth.com.br",
+                "name": " ",
+                "phone": null,
+                "verified_address": null,
+                "verified_email": null,
+                "verified_name": null,
+                "verified_phone": null
+              },
+              "statement_descriptor": null,
+              "status": "consumed",
+              "type": "card",
+              "usage": "reusable"
+            },
+            "source_transfer": null,
+            "statement_descriptor": "BRAEXP",
+            "statement_descriptor_suffix": null,
+            "status": "succeeded",
+            "transfer_data": null,
+            "transfer_group": null
+          }
+        ],
+        "has_more": false,
+        "total_count": 1,
+        "url": "/v1/charges?payment_intent=pi_3M06XjExqSJUWSDT1owVlimZ"
+      },
+      "client_secret": "pi_3M06XjExqSJUWSDT1owVlimZ_secret_Vr0Jf45xcAygTcfhqFGCIeEgQ",
+      "confirmation_method": "automatic",
+      "created": 1667493927,
+      "currency": "brl",
+      "customer": "cus_MjZhZKczfrji7o",
+      "description": "BRAEXP - Pedido 1796",
+      "invoice": null,
+      "last_payment_error": null,
+      "livemode": false,
+      "metadata": {
+        "order_id": "1796",
+        "site_url": "https://gth-stage.its.org.br",
+        "customer_email": "leo@gth.com.br",
+        "customer_name": " "
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_method": null,
+      "payment_method_options": {
+        "card": {
+          "installments": null,
+          "mandate_options": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card"
+      ],
+      "processing": null,
+      "receipt_email": null,
+      "review": null,
+      "setup_future_usage": null,
+      "shipping": null,
+      "source": "src_1M06XaExqSJUWSDTJeg5jCRU",
+      "statement_descriptor": "BRAEXP",
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_3SaeOVLE9P2F0D",
+    "idempotency_key": "2d183a35-6d80-4998-aafb-6376cb048e0a"
+  },
+  "type": "payment_intent.succeeded"
+}
+====End Log====
+
+
+2022-11-03T16:45:32+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_3M06XjExqSJUWSDT1Xf6fDXg",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667493930,
+  "data": {
+    "object": {
+      "id": "ch_3M06XjExqSJUWSDT1uSgkace",
+      "object": "charge",
+      "amount": 10000,
+      "amount_captured": 10000,
+      "amount_refunded": 0,
+      "application": null,
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_3M06XjExqSJUWSDT12OwQbLR",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "leo@gth.com.br",
+        "name": " ",
+        "phone": null
+      },
+      "calculated_statement_descriptor": "BRAEXP",
+      "captured": true,
+      "created": 1667493929,
+      "currency": "brl",
+      "customer": "cus_MjZhZKczfrji7o",
+      "description": "BRAEXP - Pedido 1796",
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_balance_transaction": null,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": false,
+      "metadata": {
+        "order_id": "1796",
+        "site_url": "https://gth-stage.its.org.br",
+        "customer_email": "leo@gth.com.br",
+        "customer_name": " "
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "normal",
+        "risk_score": 18,
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": "pi_3M06XjExqSJUWSDT1owVlimZ",
+      "payment_method": "src_1M06XaExqSJUWSDTJeg5jCRU",
+      "payment_method_details": {
+        "card": {
+          "brand": "visa",
+          "checks": {
+            "address_line1_check": null,
+            "address_postal_code_check": null,
+            "cvc_check": "pass"
+          },
+          "country": "US",
+          "exp_month": 12,
+          "exp_year": 2034,
+          "fingerprint": "Wm1HNaJhr8YprWJx",
+          "funding": "credit",
+          "installments": null,
+          "last4": "4242",
+          "mandate": null,
+          "network": "visa",
+          "three_d_secure": null,
+          "wallet": null
+        },
+        "type": "card"
+      },
+      "receipt_email": null,
+      "receipt_number": null,
+      "receipt_url": "https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUVGM1hFeHFTSlVXU0RUKKrgj5sGMgbk5UYIhmo6LBaJ3FV58mrto9XmGt0_ULiXVPt3BUkxyncpjj57Q_JyCx2MyGbBxnbcdR29",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/ch_3M06XjExqSJUWSDT1uSgkace/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": {
+        "id": "src_1M06XaExqSJUWSDTJeg5jCRU",
+        "object": "source",
+        "amount": null,
+        "card": {
+          "exp_month": 12,
+          "exp_year": 2034,
+          "last4": "4242",
+          "country": "US",
+          "brand": "Visa",
+          "cvc_check": "pass",
+          "funding": "credit",
+          "fingerprint": "Wm1HNaJhr8YprWJx",
+          "three_d_secure": "optional",
+          "name": null,
+          "address_line1_check": null,
+          "address_zip_check": null,
+          "tokenization_method": null,
+          "dynamic_last4": null
+        },
+        "client_secret": "src_client_secret_FBGHVar47rB7b2cTEQx8JrfK",
+        "created": 1667493929,
+        "currency": null,
+        "flow": "none",
+        "livemode": false,
+        "metadata": {
+        },
+        "owner": {
+          "address": null,
+          "email": "leo@gth.com.br",
+          "name": " ",
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "statement_descriptor": null,
+        "status": "consumed",
+        "type": "card",
+        "usage": "reusable"
+      },
+      "source_transfer": null,
+      "statement_descriptor": "BRAEXP",
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_3SaeOVLE9P2F0D",
+    "idempotency_key": "2d183a35-6d80-4998-aafb-6376cb048e0a"
+  },
+  "type": "charge.succeeded"
+}
+====End Log====
+
+
+2022-11-03T16:46:39+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+payment_intents/pi_3M06XjExqSJUWSDT1owVlimZ?expand[]=payment_method request: Array
+(
+)
+
+====End Log====
+
+
+2022-11-03T16:53:55+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+customers/cus_MjZhZKczfrji7o/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2022-11-03T16:54:22+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_1M06gLExqSJUWSDT0RZw4LZV",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667494460,
+  "data": {
+    "object": {
+      "id": "src_1M06gKExqSJUWSDTabon83rN",
+      "object": "source",
+      "amount": null,
+      "card": {
+        "exp_month": 3,
+        "exp_year": 2029,
+        "last4": "4242",
+        "country": "US",
+        "brand": "Visa",
+        "cvc_check": "unchecked",
+        "funding": "credit",
+        "fingerprint": "Wm1HNaJhr8YprWJx",
+        "three_d_secure": "optional",
+        "name": null,
+        "address_line1_check": null,
+        "address_zip_check": null,
+        "tokenization_method": null,
+        "dynamic_last4": null
+      },
+      "client_secret": "src_client_secret_2rpCGlyXJeUCw4UHEsC8gljb",
+      "created": 1667494460,
+      "currency": null,
+      "flow": "none",
+      "livemode": false,
+      "metadata": {
+      },
+      "owner": {
+        "address": null,
+        "email": "leo@gth.com.br",
+        "name": " ",
+        "phone": null,
+        "verified_address": null,
+        "verified_email": null,
+        "verified_name": null,
+        "verified_phone": null
+      },
+      "statement_descriptor": null,
+      "status": "chargeable",
+      "type": "card",
+      "usage": "reusable"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_84SunZTC3nNOB8",
+    "idempotency_key": "99158ccd-bbcf-4b22-9e92-b053831aa2f4"
+  },
+  "type": "source.chargeable"
+}
+====End Log====
+
+
+2022-11-03T16:54:24+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+sources/src_1M06gKExqSJUWSDTabon83rN
+====End Log====
+
+
+2022-11-03T16:54:24+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+customers/cus_MjZhZKczfrji7o request: Array
+(
+    [email] => leo@gth.com.br
+    [description] => Nome:  , Nome de usuário: 43070652042
+    [metadata] => Array
+        (
+        )
+
+    [preferred_locales] => Array
+        (
+            [0] => pt-BR
+        )
+
+)
+
+====End Log====
+
+
+2022-11-03T16:54:26+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Info: Begin processing payment for order 1804 for the amount of 120.00
+====End Log====
+
+
+2022-11-03T16:54:26+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+payment_intents request: Array
+(
+    [source] => src_1M06gKExqSJUWSDTabon83rN
+    [amount] => 12000
+    [currency] => brl
+    [description] => BRAEXP - Pedido 1804
+    [metadata] => Array
+        (
+            [customer_name] =>  
+            [customer_email] => leo@gth.com.br
+            [order_id] => 1804
+            [site_url] => https://gth-stage.its.org.br
+        )
+
+    [capture_method] => automatic
+    [payment_method_types] => Array
+        (
+            [0] => card
+        )
+
+    [customer] => cus_MjZhZKczfrji7o
+    [statement_descriptor] => BRAEXP
+)
+
+====End Log====
+
+
+2022-11-03T16:54:27+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Stripe PaymentIntent pi_3M06gQExqSJUWSDT0D47TJks initiated for order 1804
+====End Log====
+
+
+2022-11-03T16:54:27+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+payment_intents/pi_3M06gQExqSJUWSDT0D47TJks/confirm request: Array
+(
+    [source] => src_1M06gKExqSJUWSDTabon83rN
+)
+
+====End Log====
+
+
+2022-11-03T16:54:28+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_3M06gQExqSJUWSDT0BKRIVj3",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667494466,
+  "data": {
+    "object": {
+      "id": "pi_3M06gQExqSJUWSDT0D47TJks",
+      "object": "payment_intent",
+      "amount": 12000,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {
+        }
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic",
+      "charges": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges?payment_intent=pi_3M06gQExqSJUWSDT0D47TJks"
+      },
+      "client_secret": "pi_3M06gQExqSJUWSDT0D47TJks_secret_H0dbrppzpLu5LIrY1W5YGeJ0r",
+      "confirmation_method": "automatic",
+      "created": 1667494466,
+      "currency": "brl",
+      "customer": "cus_MjZhZKczfrji7o",
+      "description": "BRAEXP - Pedido 1804",
+      "invoice": null,
+      "last_payment_error": null,
+      "livemode": false,
+      "metadata": {
+        "order_id": "1804",
+        "site_url": "https://gth-stage.its.org.br",
+        "customer_email": "leo@gth.com.br",
+        "customer_name": " "
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_method": null,
+      "payment_method_options": {
+        "card": {
+          "installments": null,
+          "mandate_options": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card"
+      ],
+      "processing": null,
+      "receipt_email": null,
+      "review": null,
+      "setup_future_usage": null,
+      "shipping": null,
+      "source": null,
+      "statement_descriptor": "BRAEXP",
+      "statement_descriptor_suffix": null,
+      "status": "requires_payment_method",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_LqG7ceP9tvruwe",
+    "idempotency_key": "48a66f61-ec0d-436b-bc4a-4c8b33ec353d"
+  },
+  "type": "payment_intent.created"
+}
+====End Log====
+
+
+2022-11-03T16:54:29+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Stripe PaymentIntent pi_3M06gQExqSJUWSDT0D47TJks succeeded for order 1804
+====End Log====
+
+
+2022-11-03T16:54:29+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_3M06gQExqSJUWSDT0lTjhfhn
+    [object] => charge
+    [amount] => 12000
+    [amount_captured] => 12000
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_3M06gQExqSJUWSDT02mjXY1y
+    [billing_details] => stdClass Object
+        (
+            [address] => stdClass Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => leo@gth.com.br
+            [name] =>  
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => BRAEXP
+    [captured] => 1
+    [created] => 1667494468
+    [currency] => brl
+    [customer] => cus_MjZhZKczfrji7o
+    [description] => BRAEXP - Pedido 1804
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_balance_transaction] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_email] => leo@gth.com.br
+            [customer_name] =>  
+            [order_id] => 1804
+            [site_url] => https://gth-stage.its.org.br
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [risk_score] => 6
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => pi_3M06gQExqSJUWSDT0D47TJks
+    [payment_method] => src_1M06gKExqSJUWSDTabon83rN
+    [payment_method_details] => stdClass Object
+        (
+            [card] => stdClass Object
+                (
+                    [brand] => visa
+                    [checks] => stdClass Object
+                        (
+                            [address_line1_check] => 
+                            [address_postal_code_check] => 
+                            [cvc_check] => pass
+                        )
+
+                    [country] => US
+                    [exp_month] => 3
+                    [exp_year] => 2029
+                    [fingerprint] => Wm1HNaJhr8YprWJx
+                    [funding] => credit
+                    [installments] => 
+                    [last4] => 4242
+                    [mandate] => 
+                    [network] => visa
+                    [three_d_secure] => 
+                    [wallet] => 
+                )
+
+            [type] => card
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUVGM1hFeHFTSlVXU0RUKMXkj5sGMgYiz5yDWrg6LBZ5R-fuOGLTUD9jppZM06q7T09bF52GmGpRbzxP7TlcbR9ULhi88TOvr_jl
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_3M06gQExqSJUWSDT0lTjhfhn/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1M06gKExqSJUWSDTabon83rN
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [address_line1_check] => 
+                    [address_zip_check] => 
+                    [brand] => Visa
+                    [country] => US
+                    [cvc_check] => pass
+                    [dynamic_last4] => 
+                    [exp_month] => 3
+                    [exp_year] => 2029
+                    [fingerprint] => Wm1HNaJhr8YprWJx
+                    [funding] => credit
+                    [last4] => 4242
+                    [name] => 
+                    [three_d_secure] => optional
+                    [tokenization_method] => 
+                )
+
+            [client_secret] => src_client_secret_2rpCGlyXJeUCw4UHEsC8gljb
+            [created] => 1667494468
+            [currency] => 
+            [flow] => none
+            [livemode] => 
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => 
+                    [email] => leo@gth.com.br
+                    [name] =>  
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => consumed
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => BRAEXP
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+2022-11-03T16:54:29+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+balance/history/txn_3M06gQExqSJUWSDT02mjXY1y
+====End Log====
+
+
+2022-11-03T16:54:31+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_3M06gQExqSJUWSDT0i5xyMZq",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667494469,
+  "data": {
+    "object": {
+      "id": "ch_3M06gQExqSJUWSDT0lTjhfhn",
+      "object": "charge",
+      "amount": 12000,
+      "amount_captured": 12000,
+      "amount_refunded": 0,
+      "application": null,
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_3M06gQExqSJUWSDT02mjXY1y",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "leo@gth.com.br",
+        "name": " ",
+        "phone": null
+      },
+      "calculated_statement_descriptor": "BRAEXP",
+      "captured": true,
+      "created": 1667494468,
+      "currency": "brl",
+      "customer": "cus_MjZhZKczfrji7o",
+      "description": "BRAEXP - Pedido 1804",
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_balance_transaction": null,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": false,
+      "metadata": {
+        "order_id": "1804",
+        "site_url": "https://gth-stage.its.org.br",
+        "customer_email": "leo@gth.com.br",
+        "customer_name": " "
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "normal",
+        "risk_score": 6,
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": "pi_3M06gQExqSJUWSDT0D47TJks",
+      "payment_method": "src_1M06gKExqSJUWSDTabon83rN",
+      "payment_method_details": {
+        "card": {
+          "brand": "visa",
+          "checks": {
+            "address_line1_check": null,
+            "address_postal_code_check": null,
+            "cvc_check": "pass"
+          },
+          "country": "US",
+          "exp_month": 3,
+          "exp_year": 2029,
+          "fingerprint": "Wm1HNaJhr8YprWJx",
+          "funding": "credit",
+          "installments": null,
+          "last4": "4242",
+          "mandate": null,
+          "network": "visa",
+          "three_d_secure": null,
+          "wallet": null
+        },
+        "type": "card"
+      },
+      "receipt_email": null,
+      "receipt_number": null,
+      "receipt_url": "https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUVGM1hFeHFTSlVXU0RUKMXkj5sGMgbGqY4s15o6LBbeHa0gsE7JG7W3tU3IE1UoTfsF6qZUMvMAqhewa7geSbEs7UzopT0dzUvb",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/ch_3M06gQExqSJUWSDT0lTjhfhn/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": {
+        "id": "src_1M06gKExqSJUWSDTabon83rN",
+        "object": "source",
+        "amount": null,
+        "card": {
+          "exp_month": 3,
+          "exp_year": 2029,
+          "last4": "4242",
+          "country": "US",
+          "brand": "Visa",
+          "cvc_check": "pass",
+          "funding": "credit",
+          "fingerprint": "Wm1HNaJhr8YprWJx",
+          "three_d_secure": "optional",
+          "name": null,
+          "address_line1_check": null,
+          "address_zip_check": null,
+          "tokenization_method": null,
+          "dynamic_last4": null
+        },
+        "client_secret": "src_client_secret_2rpCGlyXJeUCw4UHEsC8gljb",
+        "created": 1667494468,
+        "currency": null,
+        "flow": "none",
+        "livemode": false,
+        "metadata": {
+        },
+        "owner": {
+          "address": null,
+          "email": "leo@gth.com.br",
+          "name": " ",
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "statement_descriptor": null,
+        "status": "consumed",
+        "type": "card",
+        "usage": "reusable"
+      },
+      "source_transfer": null,
+      "statement_descriptor": "BRAEXP",
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_8zrl4sPTiyIiT6",
+    "idempotency_key": "957ce7e7-4dce-47d1-9d7e-3f21a40b44c9"
+  },
+  "type": "charge.succeeded"
+}
+====End Log====
+
+
+2022-11-03T16:54:31+00:00 DEBUG 
+====Stripe Version: 6.8.0====
+====Start Log====
+Incoming webhook failed validation: {
+  "id": "evt_3M06gQExqSJUWSDT0tBlEBtl",
+  "object": "event",
+  "api_version": "2022-08-01",
+  "created": 1667494469,
+  "data": {
+    "object": {
+      "id": "pi_3M06gQExqSJUWSDT0D47TJks",
+      "object": "payment_intent",
+      "amount": 12000,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {
+        }
+      },
+      "amount_received": 12000,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic",
+      "charges": {
+        "object": "list",
+        "data": [
+          {
+            "id": "ch_3M06gQExqSJUWSDT0lTjhfhn",
+            "object": "charge",
+            "amount": 12000,
+            "amount_captured": 12000,
+            "amount_refunded": 0,
+            "application": null,
+            "application_fee": null,
+            "application_fee_amount": null,
+            "balance_transaction": "txn_3M06gQExqSJUWSDT02mjXY1y",
+            "billing_details": {
+              "address": {
+                "city": null,
+                "country": null,
+                "line1": null,
+                "line2": null,
+                "postal_code": null,
+                "state": null
+              },
+              "email": "leo@gth.com.br",
+              "name": " ",
+              "phone": null
+            },
+            "calculated_statement_descriptor": "BRAEXP",
+            "captured": true,
+            "created": 1667494468,
+            "currency": "brl",
+            "customer": "cus_MjZhZKczfrji7o",
+            "description": "BRAEXP - Pedido 1804",
+            "destination": null,
+            "dispute": null,
+            "disputed": false,
+            "failure_balance_transaction": null,
+            "failure_code": null,
+            "failure_message": null,
+            "fraud_details": {
+            },
+            "invoice": null,
+            "livemode": false,
+            "metadata": {
+              "order_id": "1804",
+              "site_url": "https://gth-stage.its.org.br",
+              "customer_email": "leo@gth.com.br",
+              "customer_name": " "
+            },
+            "on_behalf_of": null,
+            "order": null,
+            "outcome": {
+              "network_status": "approved_by_network",
+              "reason": null,
+              "risk_level": "normal",
+              "risk_score": 6,
+              "seller_message": "Payment complete.",
+              "type": "authorized"
+            },
+            "paid": true,
+            "payment_intent": "pi_3M06gQExqSJUWSDT0D47TJks",
+            "payment_method": "src_1M06gKExqSJUWSDTabon83rN",
+            "payment_method_details": {
+              "card": {
+                "brand": "visa",
+                "checks": {
+                  "address_line1_check": null,
+                  "address_postal_code_check": null,
+                  "cvc_check": "pass"
+                },
+                "country": "US",
+                "exp_month": 3,
+                "exp_year": 2029,
+                "fingerprint": "Wm1HNaJhr8YprWJx",
+                "funding": "credit",
+                "installments": null,
+                "last4": "4242",
+                "mandate": null,
+                "network": "visa",
+                "three_d_secure": null,
+                "wallet": null
+              },
+              "type": "card"
+            },
+            "receipt_email": null,
+            "receipt_number": null,
+            "receipt_url": "https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xSUVGM1hFeHFTSlVXU0RUKMXkj5sGMgZ-10gNwq46LBbjUmQT0Au3o-noMGSMsEHud8dchlUjy4khs-hkIlNBVj1GdG57axPj6-Ki",
+            "refunded": false,
+            "refunds": {
+              "object": "list",
+              "data": [
+
+              ],
+              "has_more": false,
+              "total_count": 0,
+              "url": "/v1/charges/ch_3M06gQExqSJUWSDT0lTjhfhn/refunds"
+            },
+            "review": null,
+            "shipping": null,
+            "source": {
+              "id": "src_1M06gKExqSJUWSDTabon83rN",
+              "object": "source",
+              "amount": null,
+              "card": {
+                "exp_month": 3,
+                "exp_year": 2029,
+                "last4": "4242",
+                "country": "US",
+                "brand": "Visa",
+                "cvc_check": "pass",
+                "funding": "credit",
+                "fingerprint": "Wm1HNaJhr8YprWJx",
+                "three_d_secure": "optional",
+                "name": null,
+                "address_line1_check": null,
+                "address_zip_check": null,
+                "tokenization_method": null,
+                "dynamic_last4": null
+              },
+              "client_secret": "src_client_secret_2rpCGlyXJeUCw4UHEsC8gljb",
+              "created": 1667494468,
+              "currency": null,
+              "flow": "none",
+              "livemode": false,
+              "metadata": {
+              },
+              "owner": {
+                "address": null,
+                "email": "leo@gth.com.br",
+                "name": " ",
+                "phone": null,
+                "verified_address": null,
+                "verified_email": null,
+                "verified_name": null,
+                "verified_phone": null
+              },
+              "statement_descriptor": null,
+              "status": "consumed",
+              "type": "card",
+              "usage": "reusable"
+            },
+            "source_transfer": null,
+            "statement_descriptor": "BRAEXP",
+            "statement_descriptor_suffix": null,
+            "status": "succeeded",
+            "transfer_data": null,
+            "transfer_group": null
+          }
+        ],
+        "has_more": false,
+        "total_count": 1,
+        "url": "/v1/charges?payment_intent=pi_3M06gQExqSJUWSDT0D47TJks"
+      },
+      "client_secret": "pi_3M06gQExqSJUWSDT0D47TJks_secret_H0dbrppzpLu5LIrY1W5YGeJ0r",
+      "confirmation_method": "automatic",
+      "created": 1667494466,
+      "currency": "brl",
+      "customer": "cus_MjZhZKczfrji7o",
+      "description": "BRAEXP - Pedido 1804",
+      "invoice": null,
+      "last_payment_error": null,
+      "livemode": false,
+      "metadata": {
+        "order_id": "1804",
+        "site_url": "https://gth-stage.its.org.br",
+        "customer_email": "leo@gth.com.br",
+        "customer_name": " "
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_method": null,
+      "payment_method_options": {
+        "card": {
+          "installments": null,
+          "mandate_options": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card"
+      ],
+      "processing": null,
+      "receipt_email": null,
+      "review": null,
+      "setup_future_usage": null,
+      "shipping": null,
+      "source": "src_1M06gKExqSJUWSDTabon83rN",
+      "statement_descriptor": "BRAEXP",
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 6,
+  "request": {
+    "id": "req_8zrl4sPTiyIiT6",
+    "idempotency_key": "957ce7e7-4dce-47d1-9d7e-3f21a40b44c9"
+  },
+  "type": "payment_intent.succeeded"
+}
+====End Log====
+
+

@@ -14,7 +14,6 @@
  *
  * @since 3.7.0
  */
-#[AllowDynamicProperties]
 class WP_Date_Query {
 	/**
 	 * Array of date queries.
@@ -237,7 +236,7 @@ class WP_Date_Query {
 	}
 
 	/**
-	 * Determines whether this is a first-order clause.
+	 * Determine whether this is a first-order clause.
 	 *
 	 * Checks to see if the current clause has any time-related keys.
 	 * If so, it's first-order.
@@ -280,7 +279,7 @@ class WP_Date_Query {
 	 * @since 4.1.0
 	 *
 	 * @param array $date_query The date_query array.
-	 * @return bool True if all values in the query are valid, false if one or more fail.
+	 * @return bool  True if all values in the query are valid, false if one or more fail.
 	 */
 	public function validate_date_values( $date_query = array() ) {
 		if ( empty( $date_query ) ) {
@@ -543,7 +542,7 @@ class WP_Date_Query {
 	}
 
 	/**
-	 * Generates WHERE clause to be appended to a main query.
+	 * Generate WHERE clause to be appended to a main query.
 	 *
 	 * @since 3.7.0
 	 *
@@ -566,7 +565,7 @@ class WP_Date_Query {
 	}
 
 	/**
-	 * Generates SQL clauses to be appended to a main query.
+	 * Generate SQL clauses to be appended to a main query.
 	 *
 	 * Called by the public WP_Date_Query::get_sql(), this method is abstracted
 	 * out to maintain parity with the other Query classes.
@@ -591,7 +590,7 @@ class WP_Date_Query {
 	}
 
 	/**
-	 * Generates SQL clauses for a single query array.
+	 * Generate SQL clauses for a single query array.
 	 *
 	 * If nested subqueries are found, this method recurses the tree to
 	 * produce the properly nested SQL.
@@ -862,12 +861,12 @@ class WP_Date_Query {
 	 *
 	 * @since 3.7.0
 	 *
-	 * @param string|array $datetime       An array of parameters or a strotime() string.
+	 * @param string|array $datetime       An array of parameters or a strotime() string
 	 * @param bool         $default_to_max Whether to round up incomplete dates. Supported by values
 	 *                                     of $datetime that are arrays, or string values that are a
 	 *                                     subset of MySQL date format ('Y', 'Y-m', 'Y-m-d', 'Y-m-d H:i').
 	 *                                     Default: false.
-	 * @return string|false A MySQL format date/time or false on failure.
+	 * @return string|false A MySQL format date/time or false on failure
 	 */
 	public function build_mysql_datetime( $datetime, $default_to_max = false ) {
 		if ( ! is_array( $datetime ) ) {

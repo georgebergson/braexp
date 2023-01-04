@@ -1,0 +1,44 @@
+.elementor-11 .elementor-element.elementor-element-4b03a99 > .elementor-container{min-height:100px;}.elementor-11 .elementor-element.elementor-element-4b03a99 > .elementor-container:after{content:"";min-height:inherit;}.elementor-11 .elementor-element.elementor-element-4b03a99:not(.elementor-motion-effects-element-type-background), .elementor-11 .elementor-element.elementor-element-4b03a99 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://gth-stage.its.org.br/wp-content/uploads/2021/08/Global-trade-hub-internacionalizacao-de-empresas-internacionalizar-minha-empresa-topo-interna.jpg");background-position:center center;background-size:cover;}.elementor-11 .elementor-element.elementor-element-4b03a99{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-11 .elementor-element.elementor-element-4b03a99 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-11 .elementor-element.elementor-element-72829207 > .elementor-container{max-width:1100px;}.elementor-11 .elementor-element.elementor-element-72829207{padding:100px 0px 0px 0px;}/* Start custom CSS */.form-row input, .form-row textarea, .form-row select {
+    background-color: white !important;
+    border: solid 1px #154992 !important;
+    box-shadow: none !important;
+}
+
+
+h1, h2, h3, h4, h5, h6, .wc-block-grid__product-title {
+    color: #154992 !important;
+    font-family: 'Open Sans' !important;
+    font-weight: 700 !important;
+    font-size: 31px !important;
+}
+
+.form-row label {
+    font-size: 15px !important;
+    font-family: 'Open Sans' !important;
+}
+
+.woocommerce-form__input{
+    width: fit-content !important;
+}
+
+.form-row .button {
+    color: white !important;
+    background-color: #154992 !important;
+    border-radius: 6px !important;
+    font-family: 'Open Sans' !important;
+    padding: 6px 20px !important;
+}
+
+.woocommerce-privacy-policy-text p{
+    font-size: 12px !important;
+    font-family: 'Open Sans' !important;
+    line-height: 19px !important;
+}
+
+.woocommerce-MyAccount-navigation-link a{
+    color: #154992 !important;
+}
+
+.woocommerce-MyAccount-navigation-link a:hover{
+    color: #2f94d2 !important;
+}/* End custom CSS */

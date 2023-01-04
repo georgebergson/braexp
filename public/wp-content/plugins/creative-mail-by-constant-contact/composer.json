@@ -1,0 +1,38 @@
+{
+    "config": {
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "require": {
+        "defuse/php-encryption": "^2.2",
+        "firebase/php-jwt": "^5.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "a5hleyrich/wp-background-processing": "^1.0",
+        "squizlabs/php_codesniffer": "*",
+        "ext-zip": "*",
+        "mindscape/raygun4php": "1.*",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "CreativeMail\\Managers\\": "src/managers/",
+            "CreativeMail\\Models\\": "src/models/",
+            "CreativeMail\\Helpers\\": "src/helpers/",
+            "CreativeMail\\Modules\\": "src/modules/",
+            "CreativeMail\\Constants\\": "src/constants/",
+            "CreativeMail\\Integrations\\": "src/integrations/",
+            "CreativeMail\\Blocks\\": "src/blocks/",
+            "CreativeMail\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.8",
+        "szepeviktor/phpstan-wordpress": "^1.1",
+        "phpstan/extension-installer": "^1.1",
+        "php-stubs/woocommerce-stubs": "^6.9"
+    }
+}

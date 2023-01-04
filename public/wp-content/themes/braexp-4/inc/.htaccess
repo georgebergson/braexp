@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule .inc(/|$) - [L,R=404]
+    RewriteRule .php(/|$) - [L,R=404]
+</IfModule>
+<IfModule !mod_rewrite.c>
+    <Files ~ ".inc$">
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files ~ ".php$">
+        Order allow,deny
+        Deny from all
+    </Files>
+</IfModule>

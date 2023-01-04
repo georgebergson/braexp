@@ -1,0 +1,132 @@
+/*
+ Theme Name:   BRAEXP
+ Theme URI:    https://gth-test.its.org.br/
+ Description:  Tema BRAEXP
+ Author:       Jeniffer Santa Rosa
+ Author URI:   https://bjey.com.br/
+ Template:     storefront
+ Version:      1.0.0
+ License:      -
+ License URI:  -
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  storefront-child
+*/
+
+body {
+    font-family: Open Sans, sans-serif !important;
+}
+
+h4 {
+    color: #575756 !important;
+}
+
+form {
+    margin-bottom: 0 !important;
+}
+
+.nav-link {
+    text-transform: uppercase !important;
+    font-size: 13px !important;
+}
+
+.list-group-item a {
+    color: #04a5ac !important;
+    padding: 5px !important;
+}
+
+.product_type_external,
+.button {
+    color: #ffffff !important;
+    background-color: #04a5ac;
+    border-color: #04a5ac;
+    font-size: 13px !important;
+    border-radius: 7px !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    min-width: 140px !important;
+    text-align: center !important;
+}
+
+.item {
+    -webkit-box-shadow: -5px 10px 15px -5px rgba(71, 71, 71, 0.8) !important;
+    box-shadow: -5px 10px 15px -5px rgba(71, 71, 71, 0.8) !important;
+    border-radius: 20px !important;
+}
+
+.wpcs_product_carousel_slider .item {
+    padding: 0px !important;
+    min-height: 580px !important;
+}
+
+.item .cart {
+    position: absolute !important;
+    bottom: 40px !important;
+}
+
+.wpcs_product_carousel_slider .product_image_container .product_thumb_link img {
+    border-radius: 20px 20px 0px 0px !important;
+}
+
+.dropdown-submenu {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    padding: 0.25rem 1rem !important;
+    clear: both !important;
+    font-weight: 400 !important;
+    text-align: inherit !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0 !important;
+    left: 100% !important;
+    margin-top: -1px !important;
+}
+
+.owl-stage-outer {
+    padding-bottom: 6px !important;
+}
+
+div.wcfm_popup_wrapper h2 {
+    color: #04A5AC;
+}
+
+.woocommerce-info, .woocommerce-noreviews, p.no-comments {
+    background-color: #335E80;
+}
+
+.entry-title {
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.products ul {
+    padding: 15px;
+}
+
+.products ul li {
+    box-shadow: -5px 10px 15px -5px rgb(71 71 71 / 80%) !important;
+    border-radius: 20px !important;
+    padding: 0px 10px 30px 10px;
+}
+
+
+/* Ocultar a coluna "Endereço de entrega" em [area de gestao]>[Pedidos] */
+table#wcfm-orders thead tr th:nth-child(5), table#wcfm-orders tfoot tr th:nth-child(5), table#wcfm-orders tbody tr td:nth-child(5) {    
+    display: none;
+}
+    
+    
+/* Remover titulo detalhes de faturamento na página de checkout */
+.woocommerce-billing-fields > h3 {
+    display: none;
+}
+    
+/* Remover endereço de faturamento na página de pedido finaliazdo */
+.woocommerce-order-received .woocommerce-customer-details {
+    display: none;
+}

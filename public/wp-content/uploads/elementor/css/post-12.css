@@ -1,0 +1,24 @@
+/* Start custom CSS */#wcfm_menu .wcfm_menu_items a.active {
+    background: #2193d1 !important;
+}
+
+#wcfm-main-contentainer .wcfm-page-headig, .wcfm_menu_logo, .wcfm_menu_no_logo {
+    background: #154992 !important;
+}
+
+#wcfm_menu, #wcfm_menu span.wcfm_sub_menu_items {
+    background: #154992 !important;
+}
+
+.wcfm-page-heading-text{
+    color: #ffffff !important;
+}
+
+
+#wcfm-main-contentainer {
+    margin: 0px !important;
+}
+
+#wcfm-content{
+    border: none !important;
+}/* End custom CSS */

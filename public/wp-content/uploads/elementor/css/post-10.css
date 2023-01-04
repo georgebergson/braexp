@@ -1,0 +1,66 @@
+.elementor-10 .elementor-element.elementor-element-d269576 > .elementor-container{min-height:100px;}.elementor-10 .elementor-element.elementor-element-d269576 > .elementor-container:after{content:"";min-height:inherit;}.elementor-10 .elementor-element.elementor-element-d269576:not(.elementor-motion-effects-element-type-background), .elementor-10 .elementor-element.elementor-element-d269576 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://gth-stage.its.org.br/wp-content/uploads/2021/08/Global-trade-hub-internacionalizacao-de-empresas-internacionalizar-minha-empresa-topo-interna.jpg");background-position:center center;background-size:cover;}.elementor-10 .elementor-element.elementor-element-d269576{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-10 .elementor-element.elementor-element-d269576 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-10 .elementor-element.elementor-element-78ccd876 > .elementor-container{max-width:1100px;}.elementor-10 .elementor-element.elementor-element-78ccd876{padding:30px 0px 30px 0px;}.elementor-10 .elementor-element.elementor-element-5235d0ea{font-family:"Open Sans", Sans-serif;font-weight:400;}/* Start custom CSS */.woocommerce-info {
+    background-color: #2f93d1 !important;
+}
+
+.elementor-widget-text-editor {
+    font-family: 'Open Sans' !important;
+}
+
+input{
+    background-color: white !important;
+    box-shadow: none !important;
+    border: solid 1px #bfbfbf  !important;
+}
+
+.select2-selection__rendered{
+    background-color: white !important;
+    box-shadow: none !important;
+    border: solid 1px #bfbfbf  !important;
+    height: 48px !important;
+    padding-top: 8px !important;
+}
+
+.select2-selection{
+    background-color: white !important;
+    box-shadow: none !important;
+    border: none  !important;
+    height: 48px !important;
+}
+
+#ship-to-different-address span{
+    color: #154992 !important;
+    font-weight: 700 !important;
+}
+
+.checkout h3{
+    color: #154992 !important;
+    font-weight: 700 !important;
+}
+
+.select2-selection__arrow{
+    top: 11px !important;
+    right: 9px !important;
+}
+
+.col2-set .form-row-first {
+    width: 49% !important;
+    float: left !important;
+    margin-right: 0px !important;
+}
+
+.col2-set .form-row-last {
+    width: 48% !important;
+    float: right !important;
+    margin-right: 0px !important;
+}
+
+.button{
+    background-color: #154992 !important;
+    border-color: white !important;
+    color: #ffffff !important;
+    border-radius: 5px !important;
+}
+
+#payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+    color: #2f93d1 !important;
+}/* End custom CSS */

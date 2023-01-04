@@ -1,0 +1,74 @@
+.elementor-15 .elementor-element.elementor-element-562c645 > .elementor-container{min-height:300px;}.elementor-15 .elementor-element.elementor-element-562c645 > .elementor-container:after{content:"";min-height:inherit;}.elementor-15 .elementor-element.elementor-element-562c645:not(.elementor-motion-effects-element-type-background), .elementor-15 .elementor-element.elementor-element-562c645 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://gth-stage.its.org.br/wp-content/uploads/2021/08/Global-trade-hub-internacionalizacao-de-empresas-internacionalizar-minha-empresa-topo-interna.jpg");background-position:top center;background-repeat:no-repeat;background-size:cover;}.elementor-15 .elementor-element.elementor-element-562c645 > .elementor-background-overlay{background-color:#000000;opacity:0.57;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-15 .elementor-element.elementor-element-562c645{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-15 .elementor-element.elementor-element-66f32a0{text-align:center;}.elementor-15 .elementor-element.elementor-element-66f32a0 .elementor-heading-title{color:#FFFFFF;font-family:"Open Sans", Sans-serif;font-weight:700;}.elementor-15 .elementor-element.elementor-element-66f32a0 > .elementor-widget-container{margin:30px 0px 0px 0px;}.elementor-15 .elementor-element.elementor-element-631a1d0 > .elementor-container{max-width:671px;min-height:185px;}.elementor-15 .elementor-element.elementor-element-631a1d0 > .elementor-container:after{content:"";min-height:inherit;}.elementor-15 .elementor-element.elementor-element-631a1d0{margin-top:0px;margin-bottom:0px;padding:0px 0px 0px 0px;}.elementor-15 .elementor-element.elementor-element-9e1103a > .elementor-element-populated{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-15 .elementor-element.elementor-element-f5c745c{text-align:center;}.elementor-15 .elementor-element.elementor-element-f5c745c .elementor-heading-title{color:#03488F;font-family:"Open Sans", Sans-serif;font-weight:800;}.elementor-15 .elementor-element.elementor-element-f5c745c > .elementor-widget-container{margin:30px 0px 0px 0px;}.elementor-15 .elementor-element.elementor-element-2919e03e > .elementor-container{max-width:900px;}.elementor-15 .elementor-element.elementor-element-2919e03e{margin-top:0px;margin-bottom:0px;padding:0px 0px 0px 0px;}/* Start custom CSS */.wcfm_registration_form_heading{
+    display:none;
+}
+
+
+.wcfm-membership-wrapper{
+     box-shadow: none !important;
+}
+
+.wcfm_registration_form_heading{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #154992;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#wcfm-main-contentainer .wcfm-text{
+    width: 100% !important;
+    box-shadow: none !important;
+    height: 45px !important;
+    border-radius: 0px  !important;
+    border: solid 2px !important;
+}
+
+#wcfm_membership_registration_form select{
+    width: 100% !important;
+    box-shadow: none !important;
+    height: 45px !important;
+    border-radius: 0px  !important;
+}
+
+#wcfm_membership_registration_form .select2{
+    width: 100% !important;
+    box-shadow: none !important;
+    height: 45px !important;
+    border-radius: 0px  !important;
+}
+
+#wcfm_membership_registration_form .select2-selection{
+    width: 100% !important;
+    box-shadow: none !important;
+    height: 45px !important;
+    border-radius: 0px  !important;
+}
+
+
+#wcfm_membership_registration_form strong{
+    font-family: 'Open Sans' !important;
+    font-style: normal !important;
+    font-size: 15px !important;
+    color: #929292 !important;
+}
+
+.wcfm_submit_button{
+    background-color: #154992 !important;
+    font-family: 'Open Sans';
+    font-size: 17px !important;
+    height: 52px !important;
+}
+
+
+.wcfm_membership_thankyou_content_wrapper {
+    background-color: #ffffff !important;
+}
+
+.wcfm_submit_button {
+    background-color: #154992 !important;
+    font-family: 'Open Sans' !important;
+    font-size: 17px !important;
+    height: 52px !important;
+    width: 100% !important;
+    font-weight: 800 !important;
+}/* End custom CSS */
