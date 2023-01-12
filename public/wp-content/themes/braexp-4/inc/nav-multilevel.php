@@ -21,7 +21,7 @@
                                 <a class="nav-link" href="<?php echo get_site_url(); ?>/lancamentos/" tabindex="-1" aria-disabled="true">Lançamentos</a>
                             </div>
                             <div class="col border-end">
-                                <a class="nav-link" href="<?php echo get_site_url(); ?>/artigos/" tabindex="-1" aria-disabled="true">Artigos</a>
+                                <a class="nav-link" href="<?php echo get_site_url(); ?>/artigos/" tabindex="-1" aria-disabled="true">Blog</a>
                             </div>
                         </div>
                         <div class="row">
