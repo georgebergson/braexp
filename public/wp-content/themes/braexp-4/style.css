@@ -28,11 +28,34 @@ form {
     text-transform: uppercase !important;
     font-size: 13px !important;
 }
-
-.list-group-item a {
-    color: #04a5ac !important;
-    padding: 5px !important;
+.menuhovernovo > a{
+    color: #04A5AB;
 }
+
+
+.menuhovernovo:focus,
+.dropdown-item:focus,
+.dropdown-item:hover ,
+.menuhovernovo:hover {
+    z-index: 1;
+    color: #fff;
+    text-decoration: none;
+    background-color: #04A5AB;
+}
+
+.menuhovernovo:focus > a,
+.menuhovernovo:hover > a {
+    z-index: 1;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.menuhovernovo:active > a{
+    color: #fff;
+    background-color: #04A5AB;
+}
+
 
 .product_type_external,
 .button {

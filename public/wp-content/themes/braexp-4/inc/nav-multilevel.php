@@ -35,19 +35,19 @@
                             </form>
                         </div>
                     </div>
-                        <div class="col-3 d-grid gap-1">
-                            <a class="btn btn-warning me-2 text-light" href="<?php echo get_site_url(); ?>/carrinho/">
-                                <i class="fa-solid fa-bag-shopping"></i> Minha Sacola
-                            </a>
-                            <a class="btn btn-success me-2 text-light" href="<?php echo get_site_url(); ?>/minha-conta/<?php echo (!is_user_logged_in() ? "?redirect=" . base64_encode($_SERVER['REQUEST_URI']) : ""); ?>">
-                                <i class="fa fa-user"></i> 
-                                <?php if (is_user_logged_in() === TRUE) {
-                                        echo "Minha Conta";
-                                        } else {
-                                            echo "Fazer Login";
-                                        } ?>
-                            </a>
-                        </div>
+                    <div class="col-3 d-grid gap-1">
+                        <a class="btn btn-warning me-2 text-light" href="<?php echo get_site_url(); ?>/carrinho/">
+                            <i class="fa-solid fa-bag-shopping"></i> Minha Sacola
+                        </a>
+                        <a class="btn btn-success me-2 text-light" href="<?php echo get_site_url(); ?>/minha-conta/<?php echo (!is_user_logged_in() ? "?redirect=" . base64_encode($_SERVER['REQUEST_URI']) : ""); ?>">
+                            <i class="fa fa-user"></i>
+                            <?php if (is_user_logged_in() === TRUE) {
+                                echo "Minha Conta";
+                            } else {
+                                echo "Fazer Login";
+                            } ?>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,8 +55,8 @@
 </nav>
 <script>
     var $ = jQuery.noConflict();
-    $(document).ready(function(){
-        $('.dropdown-submenu a.multinivel').on("click", function(e){
+    $(document).ready(function() {
+        $('.dropdown-submenu a.multinivel').on("click", function(e) {
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();
