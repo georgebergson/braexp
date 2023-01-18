@@ -51,7 +51,6 @@
             </div>
         </div>
     </a>
-    
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
             <li><a class="dropdown-item" href="<?php echo get_site_url(); ?>/categoria-produto/prepare-se-para-vender/marketing/">
                    &nbsp;Marketing
